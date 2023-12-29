@@ -28,7 +28,14 @@
   "env": {
     "browser": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    /**
+      * Jest global variables.
+      *
+      * Added to enable Jest setup features. E.g. jest.setup.js (beforeEach, afterEach, afterAll).
+      * Also sets the base url as localhost when running API tests. 
+      */
+    "jest": true 
   },
   "rules": {
     "no-unused-vars": "off",
